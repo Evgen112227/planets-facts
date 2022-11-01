@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px;
+}
+body {
+	line-height: 1;
+	background-color: whitesmoke;
+	font-family: 'League Spartan', sans-serif;
+	color: #fff;
+}
+.wrapper {
+	padding: 0 25px;
+	margin: 0 auto;
+	min-height: 100%;
+	overflow: hidden;
+	max-width: 1440px;
+	background: #070724 url('./assets/bg.png') no-repeat;
+}
+
+.container {
+	max-width: 1110px;
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 25px 40px 25px 32px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header__logo {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 36px;
+	letter-spacing: -1.05px;
+	text-transform: uppercase;
+}
+
+.header__burger {
+	display: none;
+}
+
+.header__list {
+	display: flex;
+}
+
+.header__item:not(:last-child) {
+	margin-right: 33px;
+}
+
+.header__link {
+	font-family: 'Spartan';
+	font-weight: 700;
+	font-size: 11px;
+	line-height: 25px;
+	color: #fff;
+	letter-spacing: 1px;
+	padding: 20px 0;
+	text-transform: uppercase;
+	opacity: 0.75;
+	position: relative;
+}
+
+.header__link:hover {
+	opacity: 1;
+}
+
+.header__link:hover:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 3px;
+	top: -10px;
+	left: 0px;
+	background-color: #419ebb;
+}
+
+.main {
+	max-width: 1110px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 350px;
+}
+
+.main__image {
+	text-align: center;
+	padding-top: 70px;
+	display: none;
+}
+
+.main__image.active {
+	display: block;
+	position: relative;
+}
+
+.main__image-container {
+	order: 1;
+	position: relative;
+}
+
+.main__image.tab--3::after {
+	content: '';
+	display: block;
+	color: #fff;
+	width: 163px;
+	height: 200px;
+	top: 250px;
+	left: 64px;
+	position: absolute;
+}
+
+.mercury {
+	width: 100%;
+	height: auto;
+	max-width: 250px;
+}
+
+.venus {
+	width: 100%;
+	height: auto;
+	max-width: 300px;
+}
+
+.uranus {
+	width: 100%;
+	height: auto;
+	max-width: 400px;
+}
+
+.earth {
+	width: 100%;
+	height: auto;
+	max-width: 450px;
+	padding-right: 25px;
+}
+
+.mars {
+	width: 100%;
+	height: auto;
+	max-width: 336px;
+	padding-right: 25px;
+}
+
+.jupiter {
+	max-width: 520px;
+	width: 100%;
+	height: auto;
+	padding-right: 25px;
+}
+
+.neptune {
+	max-width: 290px;
+	width: 100%;
+	height: auto;
+}
+
+.saturn {
+	max-width: 666px;
+	width: 100%;
+	height: auto;
+	padding-right: 25px;
+}
+
+.main__image--geology {
+	margin-top: -20px;
+	max-width: 163px;
+	height: auto;
+}
+
+.main__image--geology.saturn {
+	margin-top: -170px;
+}
+
+.main__info {
+	order: 2;
+	min-width: 300px;
+	margin: 56px 0px 87px 0px;
+}
+
+.main__title {
+	font-family: 'Antonio';
+	font-weight: 400;
+	font-size: 70px;
+	line-height: 104px;
+	text-transform: uppercase;
+	margin-bottom: 23px;
+}
+
+.main__description {
+	display: none;
+}
+
+.main__description.active {
+	display: block;
+}
+
+.main__description {
+	font-family: 'Spartan';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 24px;
+	min-height: 200px;
+}
+
+.main__link {
+	display: none;
+}
+
+.main__link.active {
+	display: block;
+}
+
+.main__link {
+	font-family: 'Spartan';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 25px;
+	color: #ffffff;
+	mix-blend-mode: normal;
+	opacity: 0.5;
+	margin-bottom: 30px;
+}
+
+.main__wiki {
+	font-family: 'Spartan';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 25px;
+	color: #ffffff;
+	text-decoration-line: underline;
+	opacity: 0.7;
+	position: relative;
+}
+
+.main__wiki::after {
+	content: '';
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	position: absolute;
+	top: 2px;
+	right: -20px;
+	background: url('./assets/link.png');
+}
+
+.main__list {
+	counter-reset: myCounter;
+}
+
+.main__elem {
+	list-style: none;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	padding: 12px 0px 11px 14px;
+	cursor: pointer;
+	margin-bottom: 16px;
+	font-family: 'Spartan';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 25px;
+	letter-spacing: 2.57143px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.main__elem:hover {
+	border: 1px solid transparent;
+	background-color: rgba(216, 216, 216, 0.2);
+}
+
+.main__elem.main__elem--mercury.active {
+	background-color: #419ebb;
+}
+
+.main__elem.main__elem--venus.active {
+	background-color: #eda249;
+}
+
+.main__elem.main__elem--earth.active {
+	background-color: #6d2ed5;
+}
+
+.main__elem.main__elem--mars.active {
+	background-color: #d14c32;
+}
+
+.main__elem.main__elem--jupiter.active {
+	background-color: #d83a34;
+}
+
+.main__elem.main__elem--saturn.active {
+	background-color: #cd5120;
+}
+
+.main__elem.main__elem--uranus.active {
+	background-color: #1ec1a2;
+}
+
+.main__elem.main__elem--neptune.active {
+	background-color: #2d68f0;
+}
+
+.main__elem:before {
+	counter-increment: myCounter;
+	content: '0' counter(myCounter);
+	display: inline-block;
+	text-align: center;
+	margin: 5px 10px;
+	line-height: 40px;
+	width: 40px;
+	height: 25px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 25px;
+	letter-spacing: 2.6px;
+	text-transform: uppercase;
+	opacity: 0.5;
+}
+
+.main__img {
+	height: auto;
+	width: 100%;
+}
+
+.footer {
+	justify-content: center;
+	max-width: 1110px;
+	margin: 0 auto;
+}
+
+.footer__list {
+	display: flex;
+	padding-bottom: 56px;
+	gap: 30px;
+}
+
+.footer__item {
+	flex: 1 1 25%;
+	padding: 10px 10px 20px 10px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+dt {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 25px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	opacity: 0.5;
+	margin-bottom: 15px;
+}
+
+dd {
+	font-family: 'Antonio';
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 52px;
+	letter-spacing: -1.5px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+@media (max-width: 860px) {
+	.header {
+		flex-direction: column;
+	}
+	.header__logo {
+		margin-bottom: 20px;
+	}
+
+	.footer__description {
+		font-size: 28px;
+	}
+
+	.footer__termine {
+		font-size: 12px;
+	}
+
+	.footer__list {
+		gap: 11px;
+	}
+}
+
+@media (max-width: 768px) {
+	.main {
+		display: block;
+	}
+	.main__info {
+		display: flex;
+	}
+
+	.main__info {
+		gap: 30px;
+		align-items: center;
+	}
+	.main__column-1 {
+		flex: 0 1 50%;
+	}
+	.main__column-2 {
+		flex: 0 1 50%;
+	}
+
+	.main__image--geology {
+		max-width: 103px;
+		height: auto;
+		position: absolute;
+		transform: rotate(-30deg);
+	}
+
+	.main__elem {
+		font-size: 10px;
+		padding-left: 5px;
+	}
+
+	.main__column-2 {
+		align-self: center;
+	}
+
+	.main__description {
+		font-size: 14px;
+	}
+
+	.header__list {
+		flex-wrap: wrap;
+	}
+
+	.header__item:not(:last-child) {
+		margin-right: 14px;
+	}
+}
+
+@media (max-width: 630px) {
+	.header__nav {
+		display: none;
+	}
+
+	.header__nav.active {
+		display: block;
+	}
+
+	.header__nav.active .header__list {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		position: absolute;
+		top: 70px;
+		left: 0px;
+		width: 100%;
+		height: 120%;
+		background-color: #070724;
+		z-index: 100;
+		padding-left: 50px;
+		padding-right: 25px;
+	}
+
+	.header__nav.active .header__item:not(:last-child) {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		margin-right: 0;
+	}
+
+	.header__item {
+		position: relative;
+		display: inline-block;
+		padding: 10px;
+		background: url('assets/arrowright.png') no-repeat right center;
+	}
+
+	.header__item:before {
+		display: inline-block;
+		position: absolute;
+		content: '';
+		top: 12px;
+		left: -25px;
+		width: 20px;
+		height: 20px;
+		border-radius: 15px;
+	}
+
+	.header__link:hover:after {
+		display: none;
+	}
+
+	.header__item[data-value='0']:before {
+		background-color: #def4fc;
+	}
+
+	.header__item[data-value='1']:before {
+		background-color: #f7cc7f;
+	}
+	.header__item[data-value='2']:before {
+		background-color: #545bfe;
+	}
+	.header__item[data-value='3']:before {
+		background-color: #ff6a45;
+	}
+	.header__item[data-value='4']:before {
+		background-color: #ecad7a;
+	}
+	.header__item[data-value='5']:before {
+		background-color: #fccb6b;
+	}
+	.header__item[data-value='6']:before {
+		background-color: #65f0d5;
+	}
+	.header__item[data-value='7']:before {
+		background-color: #497efa;
+	}
+
+	.header__burger {
+		display: block;
+		padding-bottom: 10px;
+	}
+
+	.header__burger.active img {
+		opacity: 50%;
+	}
+
+	.header {
+		padding: 10px 10px 0px 10px;
+		flex-direction: row;
+	}
+
+	.header__logo {
+		margin-bottom: 5px;
+	}
+
+	.footer__list {
+		flex-direction: column;
+	}
+
+	.footer__item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 10px 5px 10px;
+	}
+	.footer__termine {
+		margin-bottom: 0;
+		margin-top: 15px;
+		font-size: 16px;
+	}
+	.main__info {
+		flex-direction: column;
+	}
+
+	.main__list {
+		display: flex;
+		gap: 5%;
+	}
+
+	.main__elem:before {
+		display: none;
+	}
+	.main__description {
+		margin-bottom: 0;
+	}
+
+	.main__elem {
+		flex: 1 1 33%;
+		font-size: 8px;
+		text-align: center;
+	}
+
+	.main__column-1 {
+		margin-top: 40px;
+	}
+
+	.main__column-2 {
+		width: 100%;
+	}
+
+	.main__description {
+		min-height: 160px;
+		margin-bottom: 10px;
+	}
+	.main__info {
+		gap: 0px;
+	}
+
+	.footer__description {
+		font-size: 22px;
+	}
+	.main__info {
+		min-width: 80%;
+		margin-bottom: 10px;
+	}
+	.earth,
+	.mars,
+	.jupiter,
+	.saturn {
+		padding-right: 0;
+	}
+	.mars {
+		width: 100%;
+		height: auto;
+		max-width: 336px;
+		padding-right: 25px;
+	}
+	.main__image--geology.saturn {
+		margin-top: -75px;
+	}
+	.tabs-wiki {
+		text-align: center;
+	}
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Frontend Mentor | Planets fact site</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__logo">The planets</div>
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__item" data-value="0" data-description="mercury">
+							<a href="#" class="header__link">mercury</a>
+						</li>
+						<li class="header__item" data-value="1" data-description="venus">
+							<a href="#" class="header__link">venus</a>
+						</li>
+						<li class="header__item" data-value="2" data-description="earth">
+							<a href="#" class="header__link">earth</a>
+						</li>
+						<li class="header__item" data-value="3" data-description="mars">
+							<a href="#" class="header__link">mars</a>
+						</li>
+						<li class="header__item" data-value="4" data-description="jupiter">
+							<a href="#" class="header__link">jupiter</a>
+						</li>
+						<li class="header__item" data-value="5" data-description="saturn">
+							<a href="#" class="header__link">saturn</a>
+						</li>
+						<li class="header__item" data-value="6" data-description="uranus">
+							<a href="#" class="header__link">uranus</a>
+						</li>
+						<li class="header__item" data-value="7" data-description="neptune">
+							<a href="#" class="header__link">neptune</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__burger">
+					<img src="assets/burger.png" width="24" height="17" alt="" />
+				</div>
+			</header>
+			<main class="main">
+				<div class="main__image-container">
+					<div class="tabs">
+						<div class="main__image tab--1 active">
+							<img
+								class="mercury"
+								src="./assets/planet-mercury.svg"
+								alt="palnet Mercury"
+								width="290px"
+								height="290px"
+							/>
+						</div>
+						<div class="main__image tab--2">
+							<img
+								class="mercury"
+								src="./assets/planet-mercury-internal.svg"
+								alt="palnet Mercury"
+								width="290px"
+								height="290px"
+							/>
+						</div>
+						<div class="main__image tab--3">
+							<img
+								class="mercury"
+								src="./assets/planet-mercury.svg"
+								alt="palnet Mercury"
+								width="290px"
+								height="290px"
+							/>
+							<div>
+								<img
+									class="main__image--geology"
+									src="./assets/geology-mercury.png"
+									alt="palnet Mercury"
+									width="290px"
+									height="290px"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__info">
+					<div class="main__column-1">
+						<h2 class="main__title">mercury</h2>
+						<div class="tabs">
+							<p class="main__description tab--1 active">
+								Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun
+								takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial
+								planets in the Solar System, and is a rocky body like Earth.
+							</p>
+							<p class="main__description tab--2">
+								Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core
+								layer, a deeper liquid core layer, and a solid inner core. The planet's density is the second highest in
+								the Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
+							</p>
+							<p class="main__description tab--3">
+								Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and
+								heavy cratering, indicating that it has been geologically inactive for billions of years. It is more
+								heterogeneous than either Mars's or the Moon’s.
+							</p>
+						</div>
+						<div class="tabs tabs-wiki">
+							<div class="main__link tab--1 active">
+								Source :
+								<a class="main__wiki" href="https://en.wikipedia.org/wiki/Mercury_(planet)">Wikipedia</a>
+							</div>
+							<div class="main__link tab--2">
+								Source :
+								<a class="main__wiki" href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure"
+									>Wikipedia</a
+								>
+							</div>
+							<div class="main__link tab--3">
+								Source :
+								<a class="main__wiki" href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology"
+									>Wikipedia</a
+								>
+							</div>
+						</div>
+					</div>
+
+					<div class="main__column-2">
+						<div class="main__tabs">
+							<ol class="main__list">
+								<li class="main__elem main__elem--mercury active" data-value="1">overview</li>
+								<li class="main__elem main__elem--mercury" data-value="2">internal structure</li>
+								<li class="main__elem main__elem--mercury" data-value="3">surface geology</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">
+				<dl class="footer__list">
+					<div class="footer__item">
+						<dt class="footer__termine">rotation time</dt>
+						<dd class="footer__description">58.6 days</dd>
+					</div>
+					<div class="footer__item">
+						<dt class="footer__termine">revolution time</dt>
+						<dd class="footer__description">87.97 days</dd>
+					</div>
+					<div class="footer__item">
+						<dt class="footer__termine">radius</dt>
+						<dd class="footer__description">2,439.7 km</dd>
+					</div>
+					<div class="footer__item">
+						<dt class="footer__termine">average temp.</dt>
+						<dd class="footer__description">430°c</dd>
+					</div>
+				</dl>
+			</footer>
+		</div>
+		<script src="./script.js"></script>
+	</body>
+</html>
